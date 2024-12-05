@@ -50,7 +50,7 @@ public void withdraw (double amount) //Method for withdraw
         transactions.add("Withdrew: " + amount);//add the operation to transaction
 
     }
-public void displayTransactionHistory() {// (for-each loop) is used to iterate through the elements of the transactions list
+    public void displayTransactionHistory() {// (for-each loop) is used to iterate through the elements of the transactions list
         System.out.println("Transaction History for Account: " + accountNumber);
         for (String transaction : transactions){// Iterate through each transaction
             System.out.println(transaction);// Print each transaction

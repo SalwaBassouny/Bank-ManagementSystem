@@ -16,8 +16,9 @@ public static void main() throws InvalidInputException {
 
     };
 
-    while (true) {// while loop is used as the number of iterations unknown and the loop depends on a condition being true
-            System.out.println("\nMain menu");  // provide menu of options
+    while (true) {// for while loop is used as the number of iterations unknown and the loop depends on a condition being true
+        // provide menu of options
+            System.out.println("\nMain menu");
             System.out.println("1. Deposit");
             System.out.println("2. Withdraw");
             System.out.println("3. Check Balance");

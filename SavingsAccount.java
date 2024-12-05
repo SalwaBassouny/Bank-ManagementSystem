@@ -1,4 +1,4 @@
-abstract class SavingsAccount extends BankAccount {
+ class SavingsAccount extends BankAccount {
     private static final double minimumBalance = 3000.0;
 
 
@@ -13,7 +13,7 @@ public SavingsAccount(String accountNumber, String ignoredAccountHolderName, dou
 public void withdraw(double amount) throws InsufficientFundsException, InvalidInputException {
         if (getBalance() - amount < minimumBalance) {
             throw new InsufficientFundsException("Withdrawal would lower balance to less than minimum balance");
-        }
+        }else
     super.withdraw(amount);
     }
 
